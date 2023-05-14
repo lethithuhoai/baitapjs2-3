@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript exercises</title>
+  </head>
+  <body>
+    <h3>BÀI TẬP 1: TÍNH TIỀN LƯƠNG NHÂN VIÊN</h3>
+    <div class="form-group">
+      <div class="form-group">
+        <p>Tiền lương 1 ngày:</p>
+        <input id="tienLuong1d" class="form-control w-50" />
+      </div>
+      <div class="form-group">
+        <p>Số ngày làm:</p>
+        <input id="soNgayLam" class="form-control w-50" />
+      </div>
+      <br />
+      <button
+        onclick="tinhTongLuong()"
+        id="btntinhLuong"
+        class="btn btn-sucess"
+      >
+        Tính lương
+      </button>
+      <br />
+      <br />
+      <div class="mt2 alert alert-sucess">
+        Số lương được nhận là:
+        <span id="tongLuong"> </span>
+      </div>
+    </div>
+    <br />
+    <br />
+    <hr />
+
+    <h3>BÀI TẬP 2: TÍNH GIÁ TRỊ TRUNG BÌNH</h3>
+    <div class="form-group">
+      <div class="form-group">
+        <input
+          id="soThu1"
+          class="form-control w-50"
+          placeholder="Nhập số thứ 1"
+        />
+      </div>
+      <br />
+      <div class="form-group">
+        <input
+          id="soThu2"
+          class="form-control w-50"
+          placeholder="Nhập số thứ 2"
+        />
+      </div>
+      <br />
+      <div class="form-group">
+        <input
+          id="soThu3"
+          class="form-control w-50"
+          placeholder="Nhập số thứ 3"
+        />
+      </div>
+      <br />
+      <div class="form-group">
+        <input
+          id="soThu4"
+          class="form-control w-50"
+          placeholder="Nhập số thứ 4"
+        />
+      </div>
+      <br />
+      <div class="form-group">
+        <input
+          id="soThu5"
+          class="form-control w-50"
+          placeholder="Nhập số thứ 5"
+        />
+      </div>
+      <br />
+      <button
+        onclick="tinhTrungBinh()"
+        id="btnTinhTrungBinh"
+        class="btn btn-sucess"
+      >
+        Tính giá trị trung bình
+      </button>
+      <br />
+      <br />
+      <div class="mt2 alert alert-sucess">
+        Kết quả là: <span id="trungBinh"></span>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <h3>BÀI TẬP 3: BÀI TẬP QUY ĐỔI TIỀN</h3>
+    <div class="form-group">
+      <input
+        id="soTienCanDoi"
+        class="form-control w-50"
+        placeholder="Nhập số tiền USD"
+      />
+      <button onclick="moneyChange()" id="btnMoneyChange">Quy đổi tiền</button>
+      <br />
+      <br />
+      <div class="mt2 alert alert-sucess">
+        Kết quả là: <span id="thanhTien"></span>
+      </div>
+    </div>
+    <br />
+    <br />
+    <hr />
+    <h3>BÀI TẬP 4: TÍNH DIỆN TÍCH, CHU VI HÌNH CHỮ NHẬT</h3>
+    <div class="form-group">
+      <div class="form-group">
+        <input
+          id="chieuDai"
+          class="form-control w-25"
+          placeholder="Nhập chiều dài"
+        />
+      </div>
+      <br />
+      <div class="form-group">
+        <input
+          id="chieuRong"
+          class="form-control w-25"
+          placeholder="Nhập chiều rộng"
+        />
+      </div>
+      <br />
+      <button onclick="ResultCir()" id="btnResultCir">Kết quả</button>
+      <br />
+      <br />
+      <div>Kết quả là: <span id="result"></span></div>
+    </div>
+    <br />
+    <hr />
+    <h3>BÀI TẬP 5: TÍNH TỔNG 2 KÝ SỐ</h3>
+    <input id="total" />
+    <button id="btnTotal">Tính tổng</button>
+    <br />
+    <br />
+    <div>Kết quả là: <span id="tong-ket-qua"></span></div>
+    <br />
+    <br />
+    <script src="./JS/index.js"></script>
+  </body>
+</html>
